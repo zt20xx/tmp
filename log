@@ -1,0 +1,3 @@
+tar -cJf img.xz  buster.img
+split -b 99M img.xz img_part_
+cat img_part_* > img.xz
